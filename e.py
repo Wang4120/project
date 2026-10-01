@@ -11,3 +11,4 @@ model =ChatDeepSeek(
 response = model.chat("你好呀")
 print(response.content)
 123
+23
