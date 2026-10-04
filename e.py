@@ -8,7 +8,5 @@ model =ChatDeepSeek(
     temperature=0.7,
     api_key=key
 )
-response = model.chat("你好呀")
+response = model.invoke("你好呀")
 print(response.content)
-123
-23
