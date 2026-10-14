@@ -141,19 +141,17 @@ chat = RunnableWithMessageHistory(
 
 # 主程序：聊天
 
-def main():
-    print("我是你的心理陪伴智能体")
-    print("有什么不开心都可以和我说")
-    while True:
-        user_input = input("\n你：")
 
-        # 链
-        reply = chat.invoke(
-            {"input": user_input}
-        )
+print("我是你的心理陪伴智能体")
+print("有什么不开心都可以和我说")
+while True:
+    user_input = input("\n你：")
 
-        print(f"小暖：{reply.content}")
+    # 链
+    reply = chat.invoke(
+        {"input": user_input}
+    )
+
+    print(f"小暖：{reply.content}")
 
 
-if __name__ == "__main__":
-    main()
